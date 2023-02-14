@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Resume</title>
+	<title>My Profile</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+    <div style="height:150px">
+        <div>
+          <h1 style="font-family: sans-serif;"><center</center></h1>
+        </div>
+        
+        <div  class="bordered" id="fancy">
+          <center>Written With LOve</center>
+        </div>
+      </div>
 	<div class="wraper">
 		<div class="container">
 		<div class="left-content p-30">
@@ -597,5 +606,11 @@ Page Styles
 }
 
 </style>
+<script>
+    setInterval(function () { 
+  document.getElementById("fancy").style.background= '#'+Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.background= '#'+Math.floor(Math.random()*16777215).toString(16);  
+}, 1000);
+</script>
 </body>
 </html>
